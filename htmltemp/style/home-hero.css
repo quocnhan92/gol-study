@@ -1,0 +1,42 @@
+.hero {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 0px;
+    text-align: center;
+
+}
+.item {
+    height: 400px;
+    width: 100%;
+}
+.services, .features {
+    padding: 20px 0;
+}
+.services h2, .features h3 {
+    margin-bottom: 20px;
+}
+.services .icons img, .features img {
+    margin: 10px auto;
+    display: block;
+}
+.btn-register-div {
+width: 100%;
+text-align: center;
+}
+.btn-register {
+    background-color: #ffffff;
+    color: #0072BC;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px blue;
+    width: 200px;            
+}
+.icon {
+    border-bottom-right-radius: 3000px 1900px;
+    height: 100%;
+}
+.hero-button {
+    z-index: 100;
+}
