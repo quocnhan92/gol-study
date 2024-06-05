@@ -34,17 +34,17 @@ func main() {
 	fmt.Println("See you againt!")
 
 	router := gin.Default()
-	router.MaxMultipartMemory = 8 << 20 // 8 MiB
+	// router.MaxMultipartMemory = 8 << 20 // 8 MiB
 	router.Static("/", "./public")
 	v1 := router.Group("/v1")
 	{
 		v1.GET("/page/:name", readTemplateHtml) // get page by name
 	}
 
-	// v2 := router.Group("/v2")
-	// {
-	// 	v2.GET("/tet")
-	// }
+	v2 := router.Group("/v2")
+	{
+		v2.GET("/tet")
+	}
 
 	if err := router.Run(":8080"); err != nil {
 		log.Fatal(err)
