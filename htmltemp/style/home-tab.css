@@ -53,11 +53,6 @@
     width: 100%;
 }
 
-.tab-content {
-    margin-top: -1px;
-    border-top: 1px solid #ddd;
-}
-
 .carousel-control-4tab {
     top: 0;
     width: 16%;
@@ -95,19 +90,27 @@
     text-align: center;
 }
 
+
+.tab-content {
+    background-color: #ffffff;
+    margin-top: -1px;
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
 .tab-pane{
-    display: block;
+    margin-left: 17%;
+    /* border: 1px solid; */
+    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     padding: 32px;
     gap: 80px;
     isolation: isolate;
 
-    position: absolute;
     width: 1312px;
     height: 524px;
     left: calc(50% - 1312px/2);
-    /* top: 1097px; */
 
     background: #F2F8FC;
     border-radius: 48px;
