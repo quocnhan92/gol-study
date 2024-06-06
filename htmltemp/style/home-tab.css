@@ -1,111 +1,114 @@
-.products-services {
-    padding: 2% 10% 2% 10%;
+.nav-tabs-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+.nav-tabs>li {
+    border-bottom: none;
+    float: none;
+    margin: 0;
+}
+.nav-tabs>li>a {
+    border: 1px solid #ddd;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li > a:hover {
+    border-color: #ddd;
+    background-color: #ffffff;
+    border-bottom: none;
+}
+.nav-tabs > li > a img {
+    max-height: 45px;
+    margin-bottom: 5px;
+}
+.nav-tabs > li > a .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    border-bottom: none;
 }
 
-
-.services {
-    background-color: #fff;
-    padding: 20px 0;
-    margin: 20px 0;
+.item-4tab {
+    height: 100%;
+    width: 100%;
 }
-.services h2 {
-    margin-bottom: 20px;
-}
-.services .icons img {
-    margin: 10px auto;
-    display: block;
-}
-.features {
-    padding: 20px 0;
-    background-color: #e6f0ff;
-    margin: 20px 0;
-}
-.features h3 {
-    margin-bottom: 20px;
-}
-
-
 
 .tab-content {
-    margin-top: 20px;
+    margin-top: -1px;
+    border-top: 1px solid #ddd;
 }
-.feature-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+.carousel-control-4tab {
+    top: 0;
+    width: 16%;
+    text-align: right;
+    background: none;
+    border: none;
+    box-shadow: none;
+    max-height: 100px;
 }
-.feature-section .text {
-    max-width: 50%;
+.carousel-control-4tab.left > a:hover {
+    background-image: "img/left-arrow-h.png";
 }
-.feature-section .image {
-    max-width: 40%;
+.carousel-control-4tab.right > a:hover {
+    background-image: "img/right-arrow-h.png";
 }
-.feature-section .image img {
-    width: 100%;
-    border-radius: 10px;
+.carousel-control-4tab.left img,
+.carousel-control-4tab.right img {
+    width: 40px;
+    margin-top: 15px;
 }
-.features .text ul {
-    list-style: none;
-    padding: 0;
+.carousel-control-4tab.left {
+    text-align: right;
+    left: 0;
 }
-.features .text ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.features .text ul li:before {
-    content: '\2713';
-    color: #007bff;
-    font-weight: bold;
-    margin-right: 10px;
-}
-.carousel-control {
-    width: 5%;
+.carousel-control-4tab.right {
+    text-align: left;
+    right: 0;
 }
 .carousel-indicators {
     display: none;
 }
-.nav-tabs {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    border: none;
-    margin-bottom: 0;
-    padding: 0;
-}
-.nav-tabs>li {
-    float: none;
-    display: inline-block;
-}
-.nav-tabs>li>a {
-    display: inline-block;
-    margin-right: 2px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #333;
-    font-size: 14px;
+.carousel-inner-nav {
+    width: 64%;
+    margin-left: 17%;
     text-align: center;
-    vertical-align: middle;
 }
-.nav-tabs>li>a:hover {
-    border-color: #ddd;
-    background-color: #f5f5f5;
-}
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
-    color: #fff;
-    background-color: #007bff;
-    border: 1px solid #007bff;
-}
-.nav-tabs>li>a img {
+
+.tab-pane{
     display: block;
-    margin: 0 auto 5px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 32px;
+    gap: 80px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 1312px;
+    height: 524px;
+    left: calc(50% - 1312px/2);
+    /* top: 1097px; */
+
+    background: #F2F8FC;
+    border-radius: 48px;
 }

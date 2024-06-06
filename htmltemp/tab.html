@@ -61,40 +61,41 @@
             border-top: 1px solid #ddd;
         }
 
-        .carousel-control {
+        .carousel-control-4tab {
+            @extend .carousel-control;
             top: 0;
-            width: 17%;
+            width: 16%;
             text-align: right;
             background: none;
             border: none;
             box-shadow: none;
-            /* transform: translateY(-50%); */
         }
-        .carousel-control.left > a:hover {
+        .carousel-control-4tab.left > a:hover {
             background-image: "img/left-arrow-h.png";
         }
-        .carousel-control.right > a:hover {
+        .carousel-control-4tab.right > a:hover {
             background-image: "img/right-arrow-h.png";
         }
-        .carousel-control.left img,
-        .carousel-control.right img {
+        .carousel-control-4tab.left img,
+        .carousel-control-4tab.right img {
             width: 40px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
-        .carousel-control.left {
+        .carousel-control-4tab.left {
             text-align: right;
             left: 0;
         }
-        .carousel-control.right {
+        .carousel-control-4tab.right {
             text-align: left;
             right: 0;
         }
         .carousel-indicators {
             display: none;
         }
-        .carousel-inner {
-            width: 64.5%;
+        .carousel-inner-nav {
+            width: 64%;
             margin-left: 17%;
+            text-align: center;
         }
     </style>
 </head>
@@ -102,7 +103,7 @@
 
 <div class="container">
     <div id="tabCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner nav-tabs-wrapper">
+        <div class="carousel-inner carousel-inner-nav nav-tabs-wrapper">
             <div class="item active">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#transfer" data-toggle="tab">
@@ -126,34 +127,16 @@
                     <li><a href="#buy-data" data-toggle="tab">
                         <img src="img/ico-buy-data.png" alt="Buy Data">
                         </a></li>
-                        <li><a href="#withdraw" data-toggle="tab">
-                            <img src="img/ico-withdraw.png" alt="Withdraw">
-                            </a></li>
-                        <li><a href="#buy-pulsa" data-toggle="tab">
-                            <img src="img/ico-buy-pulsa.png" alt="Buy Pulsa">
-                            </a></li>
-                        <li><a href="#lottery" data-toggle="tab">
-                            <img src="img/ico-lottery.png" alt="Lottery">
-                            </a></li>
-                        <li><a href="#electricity-bill" data-toggle="tab">
-                            <img src="img/ico-electricity.png" alt="Electricity Bill">
-                            </a></li>
-                        <li><a href="#banking-service" data-toggle="tab">
-                            <img src="img/ico-bank.png" alt="Banking Service">
-                            </a></li>
-                        <li><a href="#buy-data" data-toggle="tab">
-                            <img src="img/ico-buy-data.png" alt="Buy Data">
-                            </a></li>
                 </ul>
             </div>
             <!-- Additional items for more tabs if necessary -->
         </div>
-        <a class="left carousel-control carousel-control-left" href="#tabCarousel" role="button" id="prev-tab" data-slide="prev">
+        <a class="left carousel-control carousel-control-4tab carousel-control-4tab-left" href="#tabCarousel" role="button" id="prev-tab" data-slide="prev">
             <img src="img/left-arrow.png" alt="Previous">
             <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control carousel-control-right" href="#tabCarousel" role="button" id="next-tab" data-slide="next">
+        <a class="right carousel-control carousel-control-4tab carousel-control-4tab-right" href="#tabCarousel" role="button" id="next-tab" data-slide="next">
             <img src="img/right-arrow.png" alt="Next">
             <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
             <span class="sr-only">Next</span>
