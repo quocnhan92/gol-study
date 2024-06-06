@@ -6,6 +6,10 @@
     <title>Tab Navigation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
+        .nav-tabs-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
         .nav-tabs {
             border-bottom: none;
             display: flex;
@@ -58,34 +62,39 @@
         }
 
         .carousel-control {
+            top: 0;
             width: 17%;
             text-align: right;
-            /* background-color: #ffffff; */
-        
             background: none;
             border: none;
             box-shadow: none;
+            /* transform: translateY(-50%); */
         }
-        .carousel-control > a:hover {
-            background-image: "img/";
+        .carousel-control.left > a:hover {
+            background-image: "img/left-arrow-h.png";
+        }
+        .carousel-control.right > a:hover {
+            background-image: "img/right-arrow-h.png";
         }
         .carousel-control.left img,
         .carousel-control.right img {
             width: 40px;
-            margin-top: 10%;
+            margin-top: 10px;
         }
-        /* .carousel-control > img {
-            width: 45px;
-            margin-top: 8%;
-        } */
         .carousel-control.left {
             text-align: right;
+            left: 0;
         }
         .carousel-control.right {
             text-align: left;
+            right: 0;
         }
         .carousel-indicators {
             display: none;
+        }
+        .carousel-inner {
+            width: 64.5%;
+            margin-left: 17%;
         }
     </style>
 </head>
@@ -93,7 +102,7 @@
 
 <div class="container">
     <div id="tabCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner nav-tabs-wrapper">
             <div class="item active">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#transfer" data-toggle="tab">
@@ -117,16 +126,34 @@
                     <li><a href="#buy-data" data-toggle="tab">
                         <img src="img/ico-buy-data.png" alt="Buy Data">
                         </a></li>
+                        <li><a href="#withdraw" data-toggle="tab">
+                            <img src="img/ico-withdraw.png" alt="Withdraw">
+                            </a></li>
+                        <li><a href="#buy-pulsa" data-toggle="tab">
+                            <img src="img/ico-buy-pulsa.png" alt="Buy Pulsa">
+                            </a></li>
+                        <li><a href="#lottery" data-toggle="tab">
+                            <img src="img/ico-lottery.png" alt="Lottery">
+                            </a></li>
+                        <li><a href="#electricity-bill" data-toggle="tab">
+                            <img src="img/ico-electricity.png" alt="Electricity Bill">
+                            </a></li>
+                        <li><a href="#banking-service" data-toggle="tab">
+                            <img src="img/ico-bank.png" alt="Banking Service">
+                            </a></li>
+                        <li><a href="#buy-data" data-toggle="tab">
+                            <img src="img/ico-buy-data.png" alt="Buy Data">
+                            </a></li>
                 </ul>
             </div>
             <!-- Additional items for more tabs if necessary -->
         </div>
-        <a class="left carousel-control carousel-control-left" href="#tabCarousel" role="button" data-slide="prev">
+        <a class="left carousel-control carousel-control-left" href="#tabCarousel" role="button" id="prev-tab" data-slide="prev">
             <img src="img/left-arrow.png" alt="Previous">
             <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control carousel-control-right" href="#tabCarousel" role="button" data-slide="next">
+        <a class="right carousel-control carousel-control-right" href="#tabCarousel" role="button" id="next-tab" data-slide="next">
             <img src="img/right-arrow.png" alt="Next">
             <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
             <span class="sr-only">Next</span>
@@ -159,5 +186,39 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var $navTabs = $('.nav-tabs');
+        var tabWidth = $navTabs.find('li').outerWidth(true);
+        var visibleTabs = Math.floor($('.nav-tabs-wrapper').width() / tabWidth);
+        var totalTabs = $navTabs.find('li').length;
+        var currentPosition = 0;
+
+        function shiftTab(direction) {
+            var $tabs = $('.nav-tabs > li');
+            var $active = $tabs.filter('.active');
+            var $newActive;
+            if (direction === 'next' && currentPosition < totalTabs - visibleTabs) {
+                $newActive = $active.next('li').length ? $active.next('li') : $tabs.first();
+                currentPosition++;
+            } else if (direction === 'prev' && currentPosition > 0) {
+                $newActive = $active.prev('li').length ? $active.prev('li') : $tabs.last();
+                currentPosition--;
+            }
+            $newActive.find('a').tab('show');
+            $navTabs.css('transform', 'translateX(' + (-currentPosition * tabWidth) + 'px)');
+        }
+
+        $('#next-tab').click(function (e) {
+            e.preventDefault();
+            shiftTab('next');
+        });
+
+        $('#prev-tab').click(function (e) {
+            e.preventDefault();
+            shiftTab('prev');
+        });
+    });
+</script>
 </body>
 </html>
