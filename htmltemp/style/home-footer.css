@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  width: 1600px;
+  padding: 80px 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background: #363c3f;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.credits {
+  color: var(--Text-alternate, #fff);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.social-links {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--M, 12px);
+}
