@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .nav-tabs {
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-tabs>li {
+            border-bottom: none;
+            float: none;
+            margin: 0;
+        }
+        .nav-tabs>li>a {
+            border: 1px solid #ddd;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-top: 5px;
+            margin-right: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li > a:hover {
+            border-color: #ddd;
+            background-color: #ffffff;
+            border-bottom: none;
+        }
+        .nav-tabs > li > a img {
+            max-height: 45px;
+            margin-bottom: 5px;
+        }
+        .nav-tabs > li > a .badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 50%;
+            border-bottom: none;
+        }
+
+        .tab-content {
+            margin-top: -1px;
+            border-top: 1px solid #ddd;
+        }
+
+        .carousel-control {
+            width: 17%;
+            text-align: right;
+            /* background-color: #ffffff; */
+        
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+        .carousel-control > a:hover {
+            background-image: "img/";
+        }
+        .carousel-control.left img,
+        .carousel-control.right img {
+            width: 40px;
+            margin-top: 10%;
+        }
+        /* .carousel-control > img {
+            width: 45px;
+            margin-top: 8%;
+        } */
+        .carousel-control.left {
+            text-align: right;
+        }
+        .carousel-control.right {
+            text-align: left;
+        }
+        .carousel-indicators {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="tabCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#transfer" data-toggle="tab">
+                        <img src="img/ico-transfer.png" alt="Transfer">
+                    </a></li>
+                    <li><a href="#withdraw" data-toggle="tab">
+                        <img src="img/ico-withdraw.png" alt="Withdraw">
+                        </a></li>
+                    <li><a href="#buy-pulsa" data-toggle="tab">
+                        <img src="img/ico-buy-pulsa.png" alt="Buy Pulsa">
+                        </a></li>
+                    <li><a href="#lottery" data-toggle="tab">
+                        <img src="img/ico-lottery.png" alt="Lottery">
+                        </a></li>
+                    <li><a href="#electricity-bill" data-toggle="tab">
+                        <img src="img/ico-electricity.png" alt="Electricity Bill">
+                        </a></li>
+                    <li><a href="#banking-service" data-toggle="tab">
+                        <img src="img/ico-bank.png" alt="Banking Service">
+                        </a></li>
+                    <li><a href="#buy-data" data-toggle="tab">
+                        <img src="img/ico-buy-data.png" alt="Buy Data">
+                        </a></li>
+                </ul>
+            </div>
+            <!-- Additional items for more tabs if necessary -->
+        </div>
+        <a class="left carousel-control carousel-control-left" href="#tabCarousel" role="button" data-slide="prev">
+            <img src="img/left-arrow.png" alt="Previous">
+            <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control carousel-control-right" href="#tabCarousel" role="button" data-slide="next">
+            <img src="img/right-arrow.png" alt="Next">
+            <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="tab-content">
+        <div id="transfer" class="tab-pane fade in active">
+            <p>Content for Transfer</p>
+        </div>
+        <div id="withdraw" class="tab-pane fade">
+            <p>Content for Withdraw</p>
+        </div>
+        <div id="buy-pulsa" class="tab-pane fade">
+            <p>Content for Buy Pulsa</p>
+        </div>
+        <div id="lottery" class="tab-pane fade">
+            <p>Content for Lottery</p>
+        </div>
+        <div id="electricity-bill" class="tab-pane fade">
+            <p>Content for Electricity Bill</p>
+        </div>
+        <div id="banking-service" class="tab-pane fade">
+            <p>Content for Banking Service</p>
+        </div>
+        <div id="buy-data" class="tab-pane fade">
+            <p>Content for Buy Data</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
