@@ -40,3 +40,8 @@ text-align: center;
 .hero-button {
     z-index: 100;
 }
+
+.item-hero{
+    width: 100%;
+    height: 100%;
+}
