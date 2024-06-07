@@ -159,28 +159,28 @@ sdfhsjkdfksjfksjfkjdfksfksdjkfkjsdfh
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="tab-content">
-        <div id="transfer" class="tab-pane fade in active">
-            <p>Content for Transfer</p>
-        </div>
-        <div id="withdraw" class="tab-pane fade">
-            <p>Content for Withdraw</p>
-        </div>
-        <div id="buy-pulsa" class="tab-pane fade">
-            <p>Content for Buy Pulsa</p>
-        </div>
-        <div id="lottery" class="tab-pane fade">
-            <p>Content for Lottery</p>
-        </div>
-        <div id="electricity-bill" class="tab-pane fade">
-            <p>Content for Electricity Bill</p>
-        </div>
-        <div id="banking-service" class="tab-pane fade">
-            <p>Content for Banking Service</p>
-        </div>
-        <div id="buy-data" class="tab-pane fade">
-            <p>Content for Buy Data</p>
-        </div>
+    <div class="tab-product-content">
+            <div id="transfer" class="container tab-product-pane fade in active">
+                <p>Content for Transfer</p>
+            </div>
+            <div id="withdraw" class="container tab-product-pane fade">
+                <p>Content for Withdraw</p>
+            </div>
+            <div id="buy-pulsa" class="container tab-product-pane fade">
+                <p>Content for Buy Pulsa</p>
+            </div>
+            <div id="lottery" class="container tab-product-pane fade">
+                <p>Content for Lottery</p>
+            </div>
+            <div id="electricity-bill" class="container tab-product-pane fade">
+                <p>Content for Electricity Bill</p>
+            </div>
+            <div id="banking-service" class="container tab-product-pane fade">
+                <p>Content for Banking Service</p>
+            </div>
+            <div id="buy-data" class="container tab-product-pane fade">
+                <p>Content for Buy Data</p>
+            </div>
     </div>
 </div>
 </section>
@@ -190,9 +190,74 @@ sdfhsjkdfksjfksjfkjdfksfksdjkfkjsdfh
         <h2>Hot Promotions and News</h2>
         <p>The applications alsows .... </p>
     </div>
-    <div class="tab-news">
-
+    <div class="container">
+        <div class="">
+            <ul class="nav nav-tabs-hot">
+                <li class="active"><a data-toggle="tab" href="#latest">Latest</a></li>
+                <li><a data-toggle="tab" href="#promotion">Promotion</a></li>
+                <li><a data-toggle="tab" href="#announcement">Announcement</a></li>
+                <li><a data-toggle="tab" href="#event">Event</a></li>
+                <li><a data-toggle="tab" href="#community">Community</a></li>
+            </ul>
+        </div>
+    
+        <div class="tab-content-hot">
+            <div id="latest" class="tab-pane-hot fade in active">
+                <div class="row row-hot">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div><div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div><div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div><div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="see-all-hot-btn">
+                    <button>See All</button>
+                </div> -->
+            </div>
+            <!-- Additional tabs can be added similarly -->
+            <div id="promotion" class="tab-pane fade">
+                <!-- Promotion content here -->
+            </div>
+            <div id="announcement" class="tab-pane fade">
+                <!-- Announcement content here -->
+            </div>
+            <div id="event" class="tab-pane fade">
+                <!-- Event content here -->
+            </div>
+            <div id="community" class="tab-pane fade">
+                <!-- Community content here -->
+            </div>
+        </div>
     </div>
+    
 </section>
 
 
@@ -274,5 +339,6 @@ sdfhsjkdfksjfksjfkjdfksfksdjkfkjsdfh
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/home-tab.js"></script>
 </body>
 </html>

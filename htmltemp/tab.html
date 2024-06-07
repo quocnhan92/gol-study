@@ -60,6 +60,37 @@
             margin-top: -1px;
             border-top: 1px solid #ddd;
         }
+        .tab-product-content {
+    background-color: #ffffff;
+    margin-top: -1px;
+    border-top: 1px solid #ddd;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    
+    
+}
+
+.tab-product-pane {
+    display: none;
+    flex-direction: row-reverse;
+    padding: 32px;
+    gap: 80px;
+    isolation: isolate;
+
+    /* width: 1312px; 
+    height: 524px;
+    left: calc(50% - 1312px/2); */
+
+    height: 424px;
+    background: #F2F8FC;
+    border-radius: 48px;
+
+    justify-content: left;
+}
+
+.tab-active {
+    display: block;
+}
 
         .carousel-control-4tab {
             @extend .carousel-control;
@@ -142,26 +173,26 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="tab-content">
-        <div id="transfer" class="tab-pane fade in active">
+    <div class="tab-product-content">
+        <div id="transfer" class="tab-product-pane fade in active">
             <p>Content for Transfer</p>
         </div>
-        <div id="withdraw" class="tab-pane fade">
+        <div id="withdraw" class="tab-product-pane fade">
             <p>Content for Withdraw</p>
         </div>
-        <div id="buy-pulsa" class="tab-pane fade">
+        <div id="buy-pulsa" class="tab-product-pane fade">
             <p>Content for Buy Pulsa</p>
         </div>
-        <div id="lottery" class="tab-pane fade">
+        <div id="lottery" class="tab-product-pane fade">
             <p>Content for Lottery</p>
         </div>
-        <div id="electricity-bill" class="tab-pane fade">
+        <div id="electricity-bill" class="tab-product-pane fade">
             <p>Content for Electricity Bill</p>
         </div>
-        <div id="banking-service" class="tab-pane fade">
+        <div id="banking-service" class="tab-product-pane fade">
             <p>Content for Banking Service</p>
         </div>
-        <div id="buy-data" class="tab-pane fade">
+        <div id="buy-data" class="tab-product-pane fade">
             <p>Content for Buy Data</p>
         </div>
     </div>
@@ -201,6 +232,18 @@
             e.preventDefault();
             shiftTab('prev');
         });
+
+        
+        // Show and hide content based on active tab
+        $('.nav-tabs > li > a').click(function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('.tab-product-pane').removeClass('tab-active').hide();
+            $(target).addClass('tab-active').fadeIn();
+        });
+
+        // Trigger click on the first tab to show the first content by default
+        $('.nav-tabs > li.active > a').trigger('click');
     });
 </script>
 </body>
