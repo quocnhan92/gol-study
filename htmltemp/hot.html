@@ -37,10 +37,6 @@
         .nav-tabs-hot > li > a:focus {
             outline: none;
         }
-
-        .tab-content-hot {
-            margin-top: 20px;
-        }
         
         .see-all-btn {
             text-align: center;
@@ -55,7 +51,8 @@
         }
 
         .row-hot {
-            justify-content: center;
+            display: block;
+            unicode-bidi: isolate;
         }
         .card-hot {
             border: 1px solid #ddd;
@@ -101,6 +98,24 @@
         .btn-promotion:hover {
             background-color: #286090;
         }
+
+        
+        .tab-content-hot {
+            margin-top: 20px;
+        }
+
+        .tab-pane-hot {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    /* gap: 80px; */
+    isolation: isolate;
+    /* width: 1312px; */
+    /* height: 524px; */
+    /* left: calc(50% - 1312px / 2); */
+}
     </style>
 </head>
 <body>
@@ -117,9 +132,10 @@
     </div>
 
 
-    <div class="tab-content-hot">
+    <div class="tab-content tab-content-hot">
         <div id="latest" class="tab-pane fade in active">
-            <div class="row row-hot">
+            <!-- <div class="row row-hot"> -->
+            <div class="row">
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card-hot">
                         <img src="img/hot1.png" alt="New User Promo">
@@ -178,62 +194,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide1.jpg" alt="Promotion 1">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-promotion">Promotion</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide2.jpg" alt="Promotion 2">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-promotion">Promotion</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide3.jpg" alt="Event 1">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-event">Event</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide4.jpg" alt="Community 1">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-community">Community</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide5.jpg" alt="Promotion 3">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-promotion">Promotion</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide6.jpg" alt="Event 2">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-event">Event</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide7.jpg" alt="Promotion 4">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-promotion">Promotion</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-hot">
-                        <img src="slide8.jpg" alt="Community 2">
-                        <h4>New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</h4>
-                        <span class="label label-community">Community</span>
-                    </div>
-                </div> -->
             </div>
             <div class="see-all-btn">
                 <button>See All</button>
@@ -242,6 +202,20 @@
         <!-- Additional tabs can be added similarly -->
         <div id="promotion" class="tab-pane fade">
             <!-- Promotion content here -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-btn">
+                <button>See All</button>
+            </div>
         </div>
         <div id="announcement" class="tab-pane fade">
             <!-- Announcement content here -->

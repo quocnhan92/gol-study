@@ -1,30 +1,45 @@
 .home-register {
     display: flex;
-    width: 1600px;
-    padding: 96px 64px;
     flex-direction: column;
-    align-items: center;
     background: var(--Background-color-primary, #fff);
   }
-  
-  .home-register .container {
-    align-self: stretch;
-    color: var(--0072-bc, #0072bc);
-    text-align: center;
+
+  .register-title {
     font-family: Magistral;
-    font-size: 44px;
-    font-style: normal;
+    font-weight: bold;
+    color: #0072BC;
     font-weight: 700;
-    line-height: 120%; /* 52.8px */
   }
-  .btn {
+
+  .register-title-btn {
     display: flex;
-    width: 768px;
-    padding: 40px 0px;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
   }
-  .btn-mobile {
+  .btn-register-item {
+    align-self: center;
+padding: 12px 16px;
+margin: 10px 15px 10px 15px;
+
+width: 30%;
+height: 48px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.18), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+border-radius: 12px;
+border: 0px;
+font-weight: bolder;
+font-size: 16px;
+  }
+
+  .btn-register-item.blue-background {
+    background-color: #0072BC;
+    color: #fff;
+  }
+
+
+
+
+  /* .btn-mobile {
     display: flex;
     padding: var(--M, 12px) 16px;
     justify-content: center;
@@ -38,8 +53,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
-  }
+    line-height: 24px; 
+  } 
   .btn-USSD {
     display: flex;
     padding: var(--M, 12px) 16px;
@@ -50,7 +65,7 @@
     border-radius: var(--M, 12px);
     background: var(--Color-Brand-white, #fff);
   
-    /* sx */
+    
     box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.18),
       0px 8px 8px -4px rgba(0, 0, 0, 0.03);
     color: var(--Neutral-11, #1f1f1f);
@@ -58,9 +73,9 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;  
   }
-  
+  */
   .card {
     display: flex;
     height: 640px;

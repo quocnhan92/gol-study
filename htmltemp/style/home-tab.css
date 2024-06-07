@@ -96,8 +96,6 @@
     border-top: 1px solid #ddd;
     padding-top: 35px;
     padding-bottom: 50px;
-    
-    
 }
 
 .tab-product-pane {
@@ -106,14 +104,8 @@
     padding: 32px;
     gap: 80px;
     isolation: isolate;
-
-    /* width: 1312px; 
-    height: 524px;
-    left: calc(50% - 1312px/2); */
-
     height: 424px;
     background: #F2F8FC;
     border-radius: 48px;
-
     justify-content: left;
 }
