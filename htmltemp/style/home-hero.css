@@ -33,10 +33,6 @@ text-align: center;
     box-shadow: 1px 1px 10px blue;
     width: 200px;            
 }
-.icon {
-    border-bottom-right-radius: 3000px 1900px;
-    height: 100%;
-}
 .hero-button {
     z-index: 100;
 }
