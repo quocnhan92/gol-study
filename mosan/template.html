@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 600px;
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .form-header p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .form-navigation button {
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .form-navigation .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .form-navigation .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .steps-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .steps-indicator .step {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+        }
+        .steps-indicator .step.inactive {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+        .steps-indicator .step + .step:before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #007bff;
+            position: absolute;
+            top: 50%;
+            left: -25px;
+            transform: translateY(-50%);
+        }
+        .steps-indicator .step.inactive + .step:before {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container form-container">
+    <div class="form-header">
+        <div class="steps-indicator">
+            <div class="step">1</div>
+            <div class="step inactive">2</div>
+            <div class="step inactive">3</div>
+            <div class="step inactive">4</div>
+        </div>
+        <h1>Let's start with your information</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="idType">Type of ID Card</label>
+            <select class="form-control" id="idType">
+                <option>Select one...</option>
+                <option>Passport</option>
+                <option>Driver's License</option>
+                <option>National ID</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="idNumber">ID number</label>
+            <input type="text" class="form-control" id="idNumber" placeholder="1234567891" value="1234567891">
+        </div>
+        <div class="form-group">
+            <label for="issuanceDate">Issuance date</label>
+            <input type="text" class="form-control" id="issuanceDate" placeholder="15/06/2015" value="15/06/2015">
+        </div>
+        <div class="form-group">
+            <label for="expireDate">Expire date</label>
+            <input type="text" class="form-control" id="expireDate" placeholder="15/06/2030" value="15/06/2030">
+        </div>
+        <div class="form-group">
+            <label for="placeOfIssue">Place of issue</label>
+            <input type="text" class="form-control" id="placeOfIssue" placeholder="Timor" value="Timor">
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Alexander Lasiles" value="Alexander Lasiles">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of birth</label>
+            <input type="text" class="form-control" id="dob" placeholder="18/12/1999" value="18/12/1999">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="2715 Ash Dr. San Jose, South Dakota 83475" value="2715 Ash Dr. San Jose, South Dakota 83475">
+        </div>
+        <div class="form-group">
+            <label for="bankAccount">Have Bank Account</label>
+            <select class="form-control" id="bankAccount">
+                <option>Select one...</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <div class="form-navigation">
+            <button type="button" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

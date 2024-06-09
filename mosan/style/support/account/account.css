@@ -1,0 +1,150 @@
+.help-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 64px;
+    gap: 64px;
+    background: #FFFFFF;
+}
+.acc-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 0 20px;
+
+    background: #F2F8FC;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.acc-menu-title{
+    /* Frame 313579 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 12px;
+    gap: 10px;
+
+    height: 40px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.acc-menu-title > p {
+    font-family: 'Magistral';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+.acc-menu-lst{
+    width: 100%;
+}
+.acc-menu-lst > p {
+    /*box-sizing: border-box;*/
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /*align-items: center;*/
+    padding-top: 12px;
+    margin-bottom: 12px;
+    /*gap: 10px;*/
+
+    border-top: 1px solid #ddd;
+
+    /* Text */
+    width: 100%;
+    height: 40px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.acc-content{
+    margin-left: 50px;
+}
+.content-title{
+    height: 42px;
+
+    font-family: 'Magistral';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    /* identical to box height, or 42px */
+
+    /* #0072BC */
+    color: #0072BC;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.content-body{
+    /* List */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'Magistral';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}

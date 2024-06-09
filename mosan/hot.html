@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promotions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .nav-tabs-hot {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-tabs-hot > li {
+            float: left;
+            margin-bottom: -1px;
+        }
+        .nav-tabs-hot > li > a {
+            margin-right: 2px;
+            line-height: 1.42857143;
+            border-radius: 0;
+            color: #333;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .nav-tabs-hot > li.active > a, 
+        .nav-tabs-hot > li.active > a:focus, 
+        .nav-tabs-hot > li.active > a:hover {
+            color: #337ab7;
+            cursor: default;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #337ab7;
+        }
+        .nav-tabs-hot > li > a:hover {
+            border-color: transparent;
+        }
+        .nav-tabs-hot > li > a:focus {
+            outline: none;
+        }
+        
+        .see-all-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .see-all-btn button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+
+        .row-hot {
+            display: block;
+            unicode-bidi: isolate;
+        }
+        .card-hot {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            margin-bottom: 30px;
+        }
+        .card-hot img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .card-hot-body {
+            padding: 15px;
+            text-align: left;
+        }
+        .card-hot-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card-hot-text {
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        .card-hot-footer {
+            /* padding: 10px 15px; */
+            /* background-color: #f8f8f8;
+            text-align: left;
+            border-top: 1px solid #ddd; */
+        }
+        .btn-promotion {
+            background-color: #E6F7FF;
+            color: #0072BC;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .btn-promotion:hover {
+            background-color: #286090;
+        }
+
+        
+        .tab-content-hot {
+            margin-top: 20px;
+        }
+
+        .tab-pane-hot {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    /* gap: 80px; */
+    isolation: isolate;
+    /* width: 1312px; */
+    /* height: 524px; */
+    /* left: calc(50% - 1312px / 2); */
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="">
+        <ul class="nav nav-tabs-hot">
+            <li class="active"><a data-toggle="tab" href="#latest">Latest</a></li>
+            <li><a data-toggle="tab" href="#promotion">Promotion</a></li>
+            <li><a data-toggle="tab" href="#announcement">Announcement</a></li>
+            <li><a data-toggle="tab" href="#event">Event</a></li>
+            <li><a data-toggle="tab" href="#community">Community</a></li>
+        </ul>
+    </div>
+
+
+    <div class="tab-content tab-content-hot">
+        <div id="latest" class="tab-pane fade in active">
+            <!-- <div class="row row-hot"> -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div><div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div><div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div><div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div><div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div><div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-btn">
+                <button>See All</button>
+            </div>
+        </div>
+        <!-- Additional tabs can be added similarly -->
+        <div id="promotion" class="tab-pane fade">
+            <!-- Promotion content here -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-hot">
+                        <img src="img/hot1.png" alt="New User Promo">
+                        <div class="card-hot-body">
+                            <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                            <a href="#" class="btn-promotion">Promotion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-btn">
+                <button>See All</button>
+            </div>
+        </div>
+        <div id="announcement" class="tab-pane fade">
+            <!-- Announcement content here -->
+        </div>
+        <div id="event" class="tab-pane fade">
+            <!-- Event content here -->
+        </div>
+        <div id="community" class="tab-pane fade">
+            <!-- Community content here -->
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

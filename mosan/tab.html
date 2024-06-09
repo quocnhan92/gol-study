@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .nav-tabs-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-tabs {
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-tabs>li {
+            border-bottom: none;
+            float: none;
+            margin: 0;
+        }
+        .nav-tabs>li>a {
+            border: 1px solid #ddd;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-top: 5px;
+            margin-right: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li > a:hover {
+            /*border-color: #ddd;*/
+            background-color: #ffffff;
+            /*border-bottom: none;*/
+        }
+        .nav-tabs > li > a img {
+            max-height: 45px;
+            margin-bottom: 5px;
+        }
+        .nav-tabs > li > a .badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 50%;
+            border-bottom: none;
+        }
+
+        .tab-content {
+            margin-top: -1px;
+            border-top: 1px solid #ddd;
+        }
+        .tab-product-content {
+            background-color: #ffffff;
+
+
+            padding-top: 35px;
+            padding-bottom: 50px;
+
+
+        }
+
+.tab-product-pane {
+    display: none;
+    flex-direction: row-reverse;
+    padding: 32px;
+    gap: 80px;
+    isolation: isolate;
+
+    /* width: 1312px; 
+    height: 524px;
+    left: calc(50% - 1312px/2); */
+
+    height: 424px;
+    background: #F2F8FC;
+    border-radius: 48px;
+
+    justify-content: left;
+}
+
+.tab-active {
+    display: block;
+}
+
+        .carousel-control-4tab {
+            /*@extend .carousel-control;*/
+            top: 0;
+            width: 20%;
+            text-align: right;
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+        .carousel-control-4tab.left > a:hover {
+            background-image: "img/left-arrow-h.png";
+        }
+        .carousel-control-4tab.right > a:hover {
+            background-image: "img/right-arrow-h.png";
+        }
+        .carousel-control-4tab.left img,
+        .carousel-control-4tab.right img {
+            width: 40px;
+            margin-top: 15px;
+        }
+        .carousel-control-4tab.left {
+            text-align: right;
+            left: 0;
+        }
+        .carousel-control-4tab.right {
+            text-align: left;
+            right: 0;
+        }
+        .carousel-indicators {
+            display: none;
+        }
+        .carousel-inner-nav {
+            width: 64%;
+            margin-left: 17%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="">
+    <div id="tabCarousel" class="carousel slide" data-ride="carousel">
+        <div class="container">
+        <div class="carousel-inner carousel-inner-nav nav-tabs-wrapper">
+            <div class="item active">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#transfer" data-toggle="tab">
+                        <img src="img/ico-transfer.png" alt="Transfer">
+                    </a></li>
+                    <li><a href="#withdraw" data-toggle="tab">
+                        <img src="img/ico-withdraw.png" alt="Withdraw">
+                        </a></li>
+                    <li><a href="#buy-pulsa" data-toggle="tab">
+                        <img src="img/ico-buy-pulsa.png" alt="Buy Pulsa">
+                        </a></li>
+                    <li><a href="#lottery" data-toggle="tab">
+                        <img src="img/ico-lottery.png" alt="Lottery">
+                        </a></li>
+                    <li><a href="#electricity-bill" data-toggle="tab">
+                        <img src="img/ico-electricity.png" alt="Electricity Bill">
+                        </a></li>
+                    <li><a href="#banking-service" data-toggle="tab">
+                        <img src="img/ico-bank.png" alt="Banking Service">
+                        </a></li>
+                    <li><a href="#buy-data" data-toggle="tab">
+                        <img src="img/ico-buy-data.png" alt="Buy Data">
+                        </a></li>
+                </ul>
+            </div>
+            <!-- Additional items for more tabs if necessary -->
+        </div>
+        </div>
+        <a class="left carousel-control carousel-control-4tab carousel-control-4tab-left" href="#tabCarousel" role="button" id="prev-tab" data-slide="prev">
+            <img src="img/left-arrow.png" alt="Previous">
+            <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control carousel-control-4tab carousel-control-4tab-right" href="#tabCarousel" role="button" id="next-tab" data-slide="next">
+            <img src="img/right-arrow.png" alt="Next">
+            <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div style="border-top: 1px solid #ddd; margin-top: -1px;">
+    <div class="container" >
+    <div class="tab-product-content">
+        <div id="transfer" class="tab-product-pane fade in active">
+            <p>Content for Transfer</p>
+        </div>
+        <div id="withdraw" class="tab-product-pane fade">
+            <p>Content for Withdraw</p>
+        </div>
+        <div id="buy-pulsa" class="tab-product-pane fade">
+            <p>Content for Buy Pulsa</p>
+        </div>
+        <div id="lottery" class="tab-product-pane fade">
+            <p>Content for Lottery</p>
+        </div>
+        <div id="electricity-bill" class="tab-product-pane fade">
+            <p>Content for Electricity Bill</p>
+        </div>
+        <div id="banking-service" class="tab-product-pane fade">
+            <p>Content for Banking Service</p>
+        </div>
+        <div id="buy-data" class="tab-product-pane fade">
+            <p>Content for Buy Data</p>
+        </div>
+    </div></div></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var $navTabs = $('.nav-tabs');
+        var tabWidth = $navTabs.find('li').outerWidth(true);
+        var visibleTabs = Math.floor($('.nav-tabs-wrapper').width() / tabWidth);
+        var totalTabs = $navTabs.find('li').length;
+        var currentPosition = 0;
+
+        function shiftTab(direction) {
+            var $tabs = $('.nav-tabs > li');
+            var $active = $tabs.filter('.active');
+            var $newActive;
+            if (direction === 'next' && currentPosition < totalTabs - visibleTabs) {
+                $newActive = $active.next('li').length ? $active.next('li') : $tabs.first();
+                currentPosition++;
+            } else if (direction === 'prev' && currentPosition > 0) {
+                $newActive = $active.prev('li').length ? $active.prev('li') : $tabs.last();
+                currentPosition--;
+            }
+            $newActive.find('a').tab('show');
+            $navTabs.css('transform', 'translateX(' + (-currentPosition * tabWidth) + 'px)');
+        }
+
+        $('#next-tab').click(function (e) {
+            e.preventDefault();
+            shiftTab('next');
+        });
+
+        $('#prev-tab').click(function (e) {
+            e.preventDefault();
+            shiftTab('prev');
+        });
+
+        
+        // Show and hide content based on active tab
+        $('.nav-tabs > li > a').click(function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('.tab-product-pane').removeClass('tab-active').hide();
+            $(target).addClass('tab-active').fadeIn();
+        });
+
+        // Trigger click on the first tab to show the first content by default
+        $('.nav-tabs > li.active > a').trigger('click');
+    });
+</script>
+</body>
+</html>

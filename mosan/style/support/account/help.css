@@ -1,0 +1,228 @@
+.help-question {
+    height: 391px;
+    background-color: #F2F8FC;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    height: 231px;
+    margin: 0 auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.18), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 64px 0px;
+    gap: 24px;
+}
+.how-can {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    line-height: 33px;
+    color: #0072BC;
+}
+.search-container-input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+
+    width: 560px;
+    height: 48px;
+
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    justify-content: right;
+}
+.form-control {
+
+}
+.search-input {
+    /*width: 90%;*/
+    border: none;
+    padding: 0;
+    height: 100%;
+
+    display: flex;
+    justify-self: left;
+}
+.search-button {
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+.suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+}
+.suggestions li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.suggestions li:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+/*    popular ****************************************************************************************************  */
+.help-popular {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 64px;
+    gap: 48px;
+
+    /*height: 524px;*/
+    background: #FFFFFF;
+}
+.help-popular-title {
+    height: 53px;
+
+    font-family: 'Magistral';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    /* identical to box height, or 53px */
+    text-align: center;
+
+    /* #0072BC */
+    color: #0072BC;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 50px;
+}
+.help-popular-content {
+
+}
+.help-popular-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 199px;
+    height: 263px;
+
+    background: #F8F8F8;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+.help-popular-content-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 150.67px;
+    height: 215px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.help-popular-content-item-content > img {
+    width: 48px;
+    height: 48px;
+}
+.help-popular-content-item-content > .title {
+    /* Medium length section heading goes here */
+
+    width: 150.67px;
+    height: 23px;
+
+    font-family: 'Magistral';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+}
+.help-popular-content-item-content > .content {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. */
+
+    width: 150.67px;
+    height: 112px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+
+}

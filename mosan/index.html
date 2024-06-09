@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mosan E-wallet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/home-hero.css">
+    <link rel="stylesheet" href="style/home-tab.css">
+    <link rel="stylesheet" href="style/home-promotion.css">
+    <link rel="stylesheet" href="style/home-register.css">
+    <link rel="stylesheet" href="style/home-safe.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="icon" /></a>
+        </div>
+        <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="service-detail.html">Services</a></li>
+<!--            <li class="dropdown">-->
+<!--                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>-->
+<!--                <ul class="dropdown-menu">-->
+<!--                    <li><a href="#">Service 1</a></li>-->
+<!--                    <li><a href="#">Service 2</a></li>-->
+<!--                    <li><a href="#">Service 3</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+            <li><a href="#">Promotion</a></li>
+<!--            <li><a href="support.html">Support</a></li>-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="support-account.html">Account</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Partner</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Mosan <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="news-detail.html">Our News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#"><img src="img/menu-1.png" alt="Language"></a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel" style="text-align: center; align-items: center;">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                <li data-target="#bannerCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item item-hero active">
+                    <img src="img/banner.png" alt="Slide 1">
+                </div>
+                <div class="item item-hero">
+                    <img src="img/banner1.jpg" alt="Slide 2">
+                </div>
+                <div class="item item-hero">
+                    <img src="img/banner.png" alt="Slide 3">
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-middle btn-register">Register Mosan</button>
+
+<!--            <a class="btn btn-primary btn-middle btn-register" href="/home" role="button" style="height: 50px; width: 300px; ">-->
+<!--                <span class="" aria-hidden="true">Register Mosan</span>-->
+<!--                <span class="sr-only">Register Mosan</span>-->
+<!--            </a>-->
+            <!-- Controls -->
+            <a class="left carousel-control" href="#bannerCarousel" role="button" data-slide="prev">
+                <img class="glyphicon glyphicon-chevron-left" style="height: 48px; width: 48px" aria-hidden="true" src="img/a-left-g.png" />
+<!--                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="img/a-left-g.png" /></span>-->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#bannerCarousel" role="button" data-slide="next">
+                <img class="glyphicon glyphicon-chevron-right" style="height: 48px; width: 48px" aria-hidden="true" src="img/a-right-g.png" />
+<!--                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container text-center products-services">
+        <h2>Products and Services</h2>
+        <p>Products and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and ServicesProducts and Services</p>
+    </div>
+</section>
+
+<section class="services home-tab">
+    <div class="">
+        <div id="tabCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner carousel-indicators-4tab carousel-inner-nav nav-tabs-wrapper">
+                <div class="item item-4tab active">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#transfer" data-toggle="tab">
+                            <img src="img/ico-transfer.png" alt="Transfer">
+                        </a></li>
+                        <li><a href="#withdraw" data-toggle="tab">
+                            <img src="img/ico-withdraw.png" alt="Withdraw">
+                            </a></li>
+                        <li><a href="#buy-pulsa" data-toggle="tab">
+                            <img src="img/ico-buy-pulsa.png" alt="Buy Pulsa">
+                            </a></li>
+                        <li><a href="#lottery" data-toggle="tab">
+                            <img src="img/ico-lottery.png" alt="Lottery">
+                            </a></li>
+                        <li><a href="#electricity-bill" data-toggle="tab">
+                            <img src="img/ico-electricity.png" alt="Electricity Bill">
+                            </a></li>
+                        <li><a href="#banking-service" data-toggle="tab">
+                            <img src="img/ico-bank.png" alt="Banking Service">
+                            </a></li>
+                        <li><a href="#buy-data" data-toggle="tab">
+                            <img src="img/ico-buy-data.png" alt="Buy Data">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="left carousel-control carousel-control-4tab carousel-control-4tab-left" href="#tabCarousel" role="button" id="prev-tab" data-slide="prev">
+                <img src="img/alt.png" alt="Previous">
+                <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control carousel-control-4tab carousel-control-4tab-right" href="#tabCarousel" role="button" id="next-tab" data-slide="next">
+                <img src="img/art.png" alt="Next">
+                <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="tab-product-content">
+            <div class="container" style="padding-left: 0; padding-right: 0">
+                <div class="promo-section">
+                    <div id="transfer"  class="promo-content row tab-product-pane fade in active">
+                        <div class="promo-text col-md-6">
+                            <h2>Transfer money instantly<br>Using your identity information</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Guspendisse varius enim in eros elementum tristique. Duis cursus dolor interdum nulla commo.</p>
+                            <ul>
+                                <li><i class="glyphicon glyphicon-ok"></i> Transfers under 2 minutes and is available during weekends.</li>
+                                <li><i class="glyphicon glyphicon-ok"></i> Safe and secure: 2-layer security with secret code and Identity information</li>
+                                <li><i class="glyphicon glyphicon-ok"></i> Widespread network of agents in every districts in Timor-Leste.</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+                        <div class="promo-image col-md-6">
+                            <img src="img/demo-discount.png" alt="Promo">
+                        </div>
+                    </div>
+                    <div id="withdraw"  class="promo-content row tab-product-pane fade ">
+                        <div class="promo-text col-md-6">
+                            <h2>withdraw<br></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Guspendisse varius enim in eros elementum tristique. Duis cursus dolor interdum nulla commo.</p>
+                        </div>
+                        <div class="promo-image col-md-6">
+                            <img src="img/demo-discount.png" alt="Promo">
+                        </div>
+                    </div>
+                    <div id="buy-pulsa"  class="promo-content row tab-product-pane fade ">
+                        <div class="promo-text col-md-6">
+
+                        </div>
+                        <div class="promo-image col-md-6">
+                            <img src="img/demo-discount.png" alt="Promo">
+                        </div>
+                    </div>
+                    <div id="lottery"  class="promo-content row tab-product-pane fade ">
+                    </div><div id="electricity-bill"  class="promo-content row tab-product-pane fade ">
+                    </div><div id="banking-service"  class="promo-content row tab-product-pane fade ">
+                    </div><div id="buy-data"  class="promo-content row tab-product-pane fade ">
+                    </div>
+                </div>
+            </div>
+    <!--            <div id="transfer" class="container tab-product-pane fade in active">-->
+    <!--                <p>Content for Transfer</p>-->
+    <!--            </div>-->
+    <!--            <div id="withdraw" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Withdraw</p>-->
+    <!--            </div>-->
+    <!--            <div id="buy-pulsa" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Buy Pulsa</p>-->
+    <!--            </div>-->
+    <!--            <div id="lottery" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Lottery</p>-->
+    <!--            </div>-->
+    <!--            <div id="electricity-bill" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Electricity Bill</p>-->
+    <!--            </div>-->
+    <!--            <div id="banking-service" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Banking Service</p>-->
+    <!--            </div>-->
+    <!--            <div id="buy-data" class="container tab-product-pane fade">-->
+    <!--                <p>Content for Buy Data</p>-->
+    <!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<section class="services home-promotion">
+    <div class="container text-center products-services">
+        <h2>Hot Promotions and News</h2>
+        <p>The applications alsows .... </p>
+    </div>
+    <div class="container" style="padding: 0;">
+        <div class="hot-tab">
+            <ul class="nav nav-tabs-hot">
+                <li class="active"><a data-toggle="tab" href="#latest">Latest</a></li>
+                <li><a data-toggle="tab" href="#promotion">Promotion</a></li>
+                <li><a data-toggle="tab" href="#announcement">Announcement</a></li>
+                <li><a data-toggle="tab" href="#event">Event</a></li>
+                <li><a data-toggle="tab" href="#community">Community</a></li>
+            </ul>
+        </div>
+    
+        <div class="hot-content">
+            <div id="latest" class="tab-hot-pane fade in active">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-all-hot-btn">
+                    <button>See All</button>
+                </div>
+            </div>
+            <!-- Additional tabs can be added similarly -->
+            <div id="promotion" class="tab-hot-pane fade">
+                <!-- Promotion content here -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-all-hot-btn">
+                    <button>See All</button>
+                </div>
+            </div>
+            <div id="announcement" class="tab-hot-pane fade">
+                <!-- Announcement content here -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot2.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item-hot-format">
+                        <div class="card-hot">
+                            <img src="img/hot1.png" alt="New User Promo">
+                            <div class="card-hot-body">
+                                <div class="card-hot-text">New Mosan users enjoy the 50% discount on your first mobile phone top-up of any amount.</div>
+                                <a href="#" class="btn-promotion">Promotion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-all-hot-btn">
+                    <button>See All</button>
+                </div>
+            </div>
+            <div id="event" class="tab-hot-pane fade">
+                Event content here
+            </div>
+            <div id="community" class="tab-hot-pane fade">
+                <!-- Community content here -->
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="services home-register">
+    <div class="container">
+        <div class="row text-center register-title">
+            <h1><strong>Register and Activate Your </br> Mosan Account</strong></h1>
+        </div>
+        <div class="row register-title-btn">
+            <button class="btn-register-item " onclick="changeColor(this)">Mobile</button>
+            <button class="btn-register-item " onclick="changeColor(this)">USSD</button>
+        </div>
+        <div class="row register-card">
+            <div class="col-sm-6 col-md-6">
+                <div class="register-card-img">
+                    <img src="img/register-1.png" alt="Register" />
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="content-block">
+                    <p> <strong>Identity Information</strong>
+                        <br>Bring your identity information (ID card/Voter card or Passport) to nearest Telemor’s agent and ask for service registration form.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row register-title-btn">
+            <button class="register-btn-register-mosan">Register Mosan <img src="img/arrow-right.png" alt=""></button>    
+        </div>
+    </div>
+</section>
+
+<section class="services home-safe">
+    <div class="container">
+        <div class="row text-center safe-title">
+            <h1><strong>Safe and Secure</strong></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <img src="img/safe-1.png" alt="2FA" class="safe-icon" />
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <img src="img/safe-2.png" alt="3D" class="safe-icon" />
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <img src="img/safe-3.png" alt="Payment" class="safe-icon" />
+            </div>
+        </div>
+    </div>
+    <div class="container container-safe" id="rowMobile">
+        <p></p>
+    </div>
+    <a href="#!"><img src="img/ico-mobile-foot.png" class="outside-image" alt="Outside Image"></a>
+</section>
+
+<footer class="home-footer">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="foot-title">
+                <p>MOSAN.TELEMOR.TL © 2024 • TELEMOR</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6  text-right">
+            <div class="social-links">
+                <a href="#!">
+                    <img src="img/ico-fb.png" alt="facebook" >
+                </a>
+                <a href="#!">
+                    <img src="img/ico-insta.png" alt="Instagram" >
+                </a>
+                <a href="#!">
+                    <img src="img/ico-ytb.png" alt="Youtube" >
+                </a>
+                <a href="#!">
+                    <img src="img/ico-x.png" alt="X" >
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/home-tab.js"></script>
+<script src="scripts/home-promotion.js"></script>
+<script src="scripts/home-register.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+lWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(ĞÖJ$9048c5c8-6808-4dfa-b22c-c083dd64aa69
+vWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¥³Æ•8Ó³Á×ÿ1J$c217deb4-c25e-4e34-9c0c-aad92a617142
+{Web:AvoidCommentedOutCodeCheck"Remove this commented out code.(­™¦ıÿÿÿÿ8Ô³Á×ÿ1J$9bfc2973-b359-44a9-b9e5-3a3781650093
+vWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(şó»Ü8Ô³Á×ÿ1J$0ae84d2e-eb74-49e8-9208-0d3d24a431e8
+{Web:AvoidCommentedOutCodeCheck"Remove this commented out code.(üşÎÜûÿÿÿÿ8Õ³Á×ÿ1J$6f46979a-eff3-4222-b466-abce59cd092f
+uWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(­üôL8Õ³Á×ÿ1J$fe04acc1-bead-4475-a40d-14d757260a0a
+{Web:AvoidCommentedOutCodeCheck "Remove this commented out code.(»‚ó®ÿÿÿÿÿ8Õ³Á×ÿ1J$b5f707a6-4645-47f3-997e-3fdea7aa24e1
+{Web:AvoidCommentedOutCodeCheck!"Remove this commented out code.(‘¨÷ üÿÿÿÿ8Ö³Á×ÿ1J$841e5e68-907f-453b-bd03-2be839372679
+vWeb:AvoidCommentedOutCodeCheck""Remove this commented out code.(ˆœª8Ö³Á×ÿ1J$28be5bb2-9d5f-402e-9a7b-8c0051703af6
+{Web:AvoidCommentedOutCodeCheck$"Remove this commented out code.(ø«Óùúÿÿÿÿ8×’•äÿ1J$4708b39c-e480-439a-a12c-1488f2b0807c
+—	Web:S6827*"PAnchors must have content and the content must be accessible by a screen reader.(¿êÕ°üÿÿÿÿ8Ê¸–äÿ1J$0d9f3d43-387d-4210-b962-baacadea708e
+¤	Web:S6819H"bUse <datalist> or <select> instead of the listbox role to ensure accessibility across all devices.(æÛ¢ß8æïê¸ÿ1J$d8fa7c98-71d5-42d6-8ff9-350fab3ed74e
+{Web:AvoidCommentedOutCodeCheckV"Remove this commented out code.(ƒˆ€úÿÿÿÿÿ8Ñ„‚¹ÿ1J$7f589d12-37aa-4f67-8af5-7122fd08fe61
+{Web:AvoidCommentedOutCodeCheckW"Remove this commented out code.(ÜÂ¶Çüÿÿÿÿ8Ò„‚¹ÿ1J$8eee4f87-7856-4140-b45c-88c9352702c8
+vWeb:AvoidCommentedOutCodeCheckX"Remove this commented out code.(„ãŞô8Ò„‚¹ÿ1J$be21d8bc-c9ce-4165-a05a-5f76b50f86c4
+vWeb:AvoidCommentedOutCodeCheckY"Remove this commented out code.(ÊœÕˆ8Ò„‚¹ÿ1J$609a3d90-e629-48f9-b535-f6cccdaee5bf
+¢,Web:MouseEventWithoutKeyboardEquivalentCheck["?Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.(ÜÃñÂøÿÿÿÿJ$6f740113-13f2-43c7-970b-696c7d25b600
+	Web:S6819["^Use <button> or <input> instead of the button role to ensure accessibility across all devices.(ÜÃñÂøÿÿÿÿJ$e481fe7a-3eb1-4d54-bf65-e4305dc8497c
+tWeb:ImgWithoutAltCheck\"%Add an "alt" attribute to this image.(·’Ñ¥8ÉÎı¸ÿ1J$e3e873b3-7c5e-4ddb-89db-d1866cb5db9a
+{Web:AvoidCommentedOutCodeCheck]"Remove this commented out code.(„ß¿Ûûÿÿÿÿ8ÉÎı¸ÿ1J$4db27716-7f54-4fb0-a54e-24f5bccf6e1d
+¢,Web:MouseEventWithoutKeyboardEquivalentCheck`"?Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.(ÉµÎ¢ùÿÿÿÿJ$6669cdf8-ed83-49a5-a663-a539a121b612
+	Web:S6819`"^Use <button> or <input> instead of the button role to ensure accessibility across all devices.(ÉµÎ¢ùÿÿÿÿJ$7301820c-7896-4d09-b9ab-7fbf63e2751e
+yWeb:ImgWithoutAltChecka"%Add an "alt" attribute to this image.(ó¡·èúÿÿÿÿ8Ø¯ö¸ÿ1J$fcd465b8-6acd-44c9-bd67-397d9fb47f89
+tWeb:AvoidCommentedOutCodeCheckb"Remove this commented out code.(ÆôÒ‡øÿÿÿÿJ$8f895922-21dc-4b99-8cd8-7f26f559197c
+,Web:MouseEventWithoutKeyboardEquivalentCheck"?Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.(üú“ŒJ$490f96de-67dd-4cc4-9c83-67d108f4b34d
+š	Web:S6819"^Use <button> or <input> instead of the button role to ensure accessibility across all devices.(üú“ŒJ$319b0e76-4299-4f19-8a41-36d25f2f13ae
+|Web:AvoidCommentedOutCodeCheck"Remove this commented out code.(ç˜ÚÖşÿÿÿÿ8¹éú¸ÿ1J$e908b108-179c-4831-aa5d-d437441acb3c
+,Web:MouseEventWithoutKeyboardEquivalentCheck“"?Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.(¢‚˜ãJ$aea9518b-411a-4438-b44d-d6cad12fa48e
+š	Web:S6819“"^Use <button> or <input> instead of the button role to ensure accessibility across all devices.(¢‚˜ãJ$37955d3c-342d-477a-b7f2-8f2bc2afa035
+|Web:AvoidCommentedOutCodeCheck•"Remove this commented out code.(ÆôÒ‡øÿÿÿÿ8¹éú¸ÿ1J$38452a10-aab9-4292-83f3-3a60d4347224
+|Web:AvoidCommentedOutCodeCheckÃ"Remove this commented out code.(“ºÎÆúÿÿÿÿ8Ûıë²ÿ1J$e1e77e01-e07a-44f6-9cdf-d91a921c9c77
+wWeb:AvoidCommentedOutCodeCheckÄ"Remove this commented out code.(¡«¶ 8Ûıë²ÿ1J$b3b7ff02-b22f-4e95-b86c-5e3c9958403b
+wWeb:AvoidCommentedOutCodeCheckÅ"Remove this commented out code.(‹ü­½8Ûıë²ÿ1J$ce503a8c-afd9-4524-8837-1d3ee900cf69
+|Web:AvoidCommentedOutCodeCheckÆ"Remove this commented out code.(û§™Æúÿÿÿÿ8Ûıë²ÿ1J$20f9f484-b78c-4523-b237-bb9b591df562
+wWeb:AvoidCommentedOutCodeCheckÇ"Remove this commented out code.(ˆ–«É8Ûıë²ÿ1J$ff471ab7-d5a0-4201-b6db-253396c4fafc
+wWeb:AvoidCommentedOutCodeCheckÈ"Remove this commented out code.(‹ü­½8Ûıë²ÿ1J$13a3c17a-284e-4a26-8b95-42e7ed437da7
+wWeb:AvoidCommentedOutCodeCheckÉ"Remove this commented out code.(ï‰µä8Üıë²ÿ1J$ca6f0674-327d-438c-9e4c-ce8e4cfa689c
+|Web:AvoidCommentedOutCodeCheckÊ"Remove this commented out code.(ÓÒ×…üÿÿÿÿ8Üıë²ÿ1J$0b869cf5-d627-4ee4-bf26-a9a24f5a7723
+wWeb:AvoidCommentedOutCodeCheckË"Remove this commented out code.(‹ü­½8Üıë²ÿ1J$5369da9f-c3b5-4a6d-9b03-ad5bd19dddfb
+|Web:AvoidCommentedOutCodeCheckÌ"Remove this commented out code.(äˆ‘¦ûÿÿÿÿ8Üıë²ÿ1J$81583523-9e61-4bb5-909c-b6d627b0d4ad
+|Web:AvoidCommentedOutCodeCheckÍ"Remove this commented out code.(½À°øÿÿÿÿ8Üıë²ÿ1J$882b19fc-f209-4197-855e-a64d481a4815
+wWeb:AvoidCommentedOutCodeCheckÎ"Remove this commented out code.(‹ü­½8Üıë²ÿ1J$6fa5e46e-cb50-452a-a0e5-324a4b263d82
+wWeb:AvoidCommentedOutCodeCheckÏ"Remove this commented out code.(²¸üÑ8Üıë²ÿ1J$493b43ac-7554-4cc3-b2cc-faf42189e29e
+|Web:AvoidCommentedOutCodeCheckĞ"Remove this commented out code.(ß›Ùİÿÿÿÿÿ8İıë²ÿ1J$23506eb3-2627-49c9-9073-49e9d6416265
+wWeb:AvoidCommentedOutCodeCheckÑ"Remove this commented out code.(‹ü­½8İıë²ÿ1J$b766b427-38aa-4de3-858b-66dd642364a8
+|Web:AvoidCommentedOutCodeCheckÒ"Remove this commented out code.(˜şôÿÿÿÿÿ8İıë²ÿ1J$8d624b38-afd6-4ddb-8c1c-8be6acdd9c45
+|Web:AvoidCommentedOutCodeCheckÓ"Remove this commented out code.(‰™êŸşÿÿÿÿ8İıë²ÿ1J$8d9e9a8c-b62f-45ec-9c8e-7972f6f8dc23
+wWeb:AvoidCommentedOutCodeCheckÔ"Remove this commented out code.(‹ü­½8İıë²ÿ1J$fac21ab7-c76c-431e-9364-fa408c691bef
+|Web:AvoidCommentedOutCodeCheckÕ"Remove this commented out code.(™ñšéùÿÿÿÿ8İıë²ÿ1J$d7410b31-ce30-42ca-bfa0-c8249f37166e
+|Web:AvoidCommentedOutCodeCheckÖ"Remove this commented out code.(ÀÎ†¯ùÿÿÿÿ8Şıë²ÿ1J$5b4d2ffc-0d5d-4310-9db8-b1f74f3f055b
+wWeb:AvoidCommentedOutCodeCheck×"Remove this commented out code.(‹ü­½8Şıë²ÿ1J$7314fe7a-09d9-43da-bc3a-7a468e7d5608
+Œ	Web:S6851È"IRemove redundant word "image" from the "alt" attribute of your "img" tag.(éÌÓ÷8ı£ø¶ÿ1J$84a9c9c9-d450-46ca-8a4c-67c57da88e2d

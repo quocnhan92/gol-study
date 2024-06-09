@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MagistralBook';
+  src: url('fonts/fonnts.com-Magistral_Book.otf') format('otf'),
+  url('fonts/fonnts.com-Magistral_Bold.otf') format('otf'),
+  url('fonts/fonnts.com-Magistral_Extra_Bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  /*font-family: 'MagistralBook', sans-serif;*/
+  font-family: Magistral, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}

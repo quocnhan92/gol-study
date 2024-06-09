@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel with Tab Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .nav-tabs-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-tabs {
+            display: flex;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+        .nav-tabs > li {
+            float: none;
+            display: inline-block;
+        }
+        .nav-tabs > li > a {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: normal;
+        }
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li > a:hover {
+            border-color: #ddd;
+            background-color: #ffffff;
+        }
+        .nav-tabs > li > a img {
+            max-height: 24px;
+            margin-bottom: 5px;
+        }
+        .carousel-control {
+            background: none;
+            border: none;
+            box-shadow: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-control.left {
+            left: 0;
+        }
+        .carousel-control.right {
+            right: 0;
+        }
+        .carousel-control img {
+            width: 24px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-tabs-wrapper">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#transfer" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Transfer">
+                Transfer
+            </a></li>
+            <li><a href="#withdraw" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Withdraw">
+                Withdraw
+            </a></li>
+            <li><a href="#buy-pulsa" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Pulsa">
+                Buy Pulsa
+            </a></li>
+            <li><a href="#lottery" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Lottery">
+                Lottery
+            </a></li>
+            <li><a href="#electricity-bill" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Electricity Bill">
+                Electricity Bill
+            </a></li>
+            <li><a href="#banking-service" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Banking Service">
+                Banking Service
+            </a></li>
+            <li><a href="#buy-data" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Data">
+                Buy Data
+            </a></li>
+            <li class="active"><a href="#transfer" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Transfer">
+                Transfer
+            </a></li>
+            <li><a href="#withdraw" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Withdraw">
+                Withdraw
+            </a></li>
+            <li><a href="#buy-pulsa" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Pulsa">
+                Buy Pulsa
+            </a></li>
+            <li><a href="#lottery" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Lottery">
+                Lottery
+            </a></li>
+            <li><a href="#electricity-bill" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Electricity Bill">
+                Electricity Bill
+            </a></li>
+            <li><a href="#banking-service" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Banking Service">
+                Banking Service
+            </a></li>
+            <li><a href="#buy-data" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Data">
+                Buy Data
+            </a></li>
+            <li class="active"><a href="#transfer" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Transfer">
+                Transfer
+            </a></li>
+            <li><a href="#withdraw" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Withdraw">
+                Withdraw
+            </a></li>
+            <li><a href="#buy-pulsa" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Pulsa">
+                Buy Pulsa
+            </a></li>
+            <li><a href="#lottery" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Lottery">
+                Lottery
+            </a></li>
+            <li><a href="#electricity-bill" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Electricity Bill">
+                Electricity Bill
+            </a></li>
+            <li><a href="#banking-service" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Banking Service">
+                Banking Service
+            </a></li>
+            <li><a href="#buy-data" data-toggle="tab">
+                <img src="https://via.placeholder.com/24" alt="Buy Data">
+                Buy Data
+            </a></li>
+        </ul>
+
+        <a class="left carousel-control" href="#" role="button" id="prev-tab">
+            <img src="left-arrow.png" alt="Previous"> <!-- Replace with your image URL -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#" role="button" id="next-tab">
+            <img src="right-arrow.png" alt="Next"> <!-- Replace with your image URL -->
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="tab-content">
+        <div id="transfer" class="tab-pane fade in active">
+            <p>Content for Transfer</p>
+        </div>
+        <div id="withdraw" class="tab-pane fade">
+            <p>Content for Withdraw</p>
+        </div>
+        <div id="buy-pulsa" class="tab-pane fade">
+            <p>Content for Buy Pulsa</p>
+        </div>
+        <div id="lottery" class="tab-pane fade">
+            <p>Content for Lottery</p>
+        </div>
+        <div id="electricity-bill" class="tab-pane fade">
+            <p>Content for Electricity Bill</p>
+        </div>
+        <div id="banking-service" class="tab-pane fade">
+            <p>Content for Banking Service</p>
+        </div>
+        <div id="buy-data" class="tab-pane fade">
+            <p>Content for Buy Data</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var $navTabs = $('.nav-tabs');
+        var tabWidth = $navTabs.find('li').outerWidth(true);
+        var visibleTabs = Math.floor($('.nav-tabs-wrapper').width() / tabWidth);
+        var totalTabs = $navTabs.find('li').length;
+        var currentPosition = 0;
+
+        function shiftTabs(direction) {
+            if (direction === 'next' && currentPosition < totalTabs - visibleTabs) {
+                currentPosition++;
+            } else if (direction === 'prev' && currentPosition > 0) {
+                currentPosition--;
+            }
+            $navTabs.css('transform', 'translateX(' + (-currentPosition * tabWidth) + 'px)');
+        }
+
+        $('#next-tab').click(function (e) {
+            e.preventDefault();
+            shiftTabs('next');
+        });
+
+        $('#prev-tab').click(function (e) {
+            e.preventDefault();
+            shiftTabs('prev');
+        });
+    });
+</script>
+</body>
+</html>
